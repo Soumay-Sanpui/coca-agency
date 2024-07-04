@@ -30,7 +30,7 @@ const FeatureSection = () => {
     },
   ];
   return (
-    <div className='w-screen p-10 flex my-[2vw]'>
+    <div className='w-screen p-10 flex my-[4vw]'>
         {/* left section */}
         <div className='w-1/2 flex flex-col gap-[3vw]'>
             <h2 className='font-semibold text-[4vw] leading-[4.5vw]'>Use coca to<br />build a website<br />that looks<br />beautiful.</h2>

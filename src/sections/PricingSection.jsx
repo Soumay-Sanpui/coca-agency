@@ -62,26 +62,36 @@ const PricingSection = () => {
 
   ]
   return (
-    <div className='py-[9vw] min-h-screen'>
+    <div className='py-[9vw] min-h-screen bg-[url("/primg.png")] bg-cover bg-no-repeat'>
       {/* announcer section */}
       <div className='w-full flex flex-col items-center justify-center gap-[3vw]'>
         <h2 className='font-semibold text-[5vw]'>Get Started</h2>
         <p className='text-center'>By signing up now, you'll be able to gain access to our exclusive premium features,<br/>which are typically only available to paid users, without spending a single dime.</p>
 
         {/* switch */}
-        <div className='flex flex-col items-center justify-around gap-[2vw]'>
+        <div className='flex flex-col items-center justify-around gap-[1vw]'>
           <div className='flex gap-[2vw] items-center'>
             <h5>Monthly</h5>
-            <div className={`bg-btncl border border-btncl w-[7vw] h-[3vw] rounded-full flex items-center p-1 ${isMonthly ? 'justify-start bg-transparent': 'justify-end'}`} onClick={()=>setIsMonthly(!isMonthly)}>
+            <div className={`cursor-pointer bg-btncl border border-btncl w-[7vw] h-[3vw] rounded-full flex items-center p-1 ${isMonthly ? 'justify-start bg-transparent': 'justify-end'}`} onClick={()=>setIsMonthly(!isMonthly)}>
               <span className='border border-black/25 w-[35%] h-full bg-white rounded-full' ></span>
             </div>
             <h5>Yearly</h5>
           </div>
           {/* discount */}
-          <div>
+          <div className='flex items-center justify-center pl-4 relative'>
             <div className='bg-btncl/30 w-max px-6 py-2 rounded-full'>
               <p>Save 75%</p>
             </div>
+            <svg className='absolute -right-10 -top-3' width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_1367)">
+            <path d="M38.194 0.181819C39.6732 1.52177 39.761 3.22487 39.6381 4.80436C39.4381 6.99917 39.0008 9.19635 38.353 11.2699C35.1184 20.744 28.7584 27.5817 19.8757 32.0425C17.6133 33.1686 15.1523 33.9894 12.5123 35.0354C14.3741 36.9302 17.1841 37.4468 19.2129 39.298C18.1725 39.8671 17.3035 39.4987 16.5749 39.2127C13.5904 38.0275 10.5914 36.7866 7.63348 35.4755C6.21745 34.8332 5.91708 34.1379 6.65718 32.8734C8.16393 30.2186 10.3341 28.2833 13.1265 27.138C13.2378 27.1089 13.4484 27.2325 13.7849 27.3828C13.7979 29.9386 10.5913 30.1802 10.0162 32.5325C14.0893 32.4218 17.5882 30.7944 20.8886 28.8618C24.3414 26.8299 27.5399 24.5073 30.1308 21.4505C32.6805 18.4639 34.4725 15.0799 36.0249 11.4609C37.6475 7.88306 38.2777 4.14758 38.194 0.181819Z" fill="#1D1E25"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_1367">
+            <rect width="33.1328" height="40.1939" fill="white" transform="translate(38.8906) rotate(75.3736)"/>
+            </clipPath>
+            </defs>
+            </svg>
           </div>
         </div>
       </div>

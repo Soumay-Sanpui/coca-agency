@@ -36,14 +36,14 @@ const ServiceSection = () => {
     }
   ]
   return (
-    <div className='w-screen bg-[#1A1A1A] text-white py-[10vw] px-[6vw]'>
+    <div className='w-screen bg-[url("/frimg.png")] bg-cover bg-no-repeat text-white py-[10vw] px-[6vw]'>
         {/* announcer */}
         <div className='flex flex-col gap-[2vw]'>
             <h2 className='text-[4vw] font-semibold'>Take Your Copywriting to<br />the Next Level with These<br/>Innovative Features</h2>
             <p>Upgrade your copywriting with powerful tools that analyze, generate, and optimize headlines, emotional impact,<br />persuasion, and more, ensuring your message stands out and resonates with your target audience."</p>
         </div>
         {/* card section */}
-        <div className='flex flex-wrap w-[80%] gap-[3vw]'>
+        <div className='flex flex-wrap w-[80%] gap-[3vw] mt-[7vw]'>
             {
                 services.map((service,index)=>(
                     <ServiceCard icn={service.icn} ttl={service.ttl} desc={service.desc} key={index}/>

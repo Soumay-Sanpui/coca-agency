@@ -10,14 +10,14 @@ const Navbar = () => {
             <img src='/logo.png'/>
         </div>
         {/* links & CTA sections */}
-            <div className='flex gap-[2vw]'>
+            <div className='flex gap-[2vw] text-sm font-extralight'>
                 {
                     navLinks.map((link,index)=>(
                         <a className='hover:text-blue-500' href='/' key={index}>{link}</a>
                     ))
                 }
             </div>
-            <Button text={"Start For Free"}/>
+            <Button text={"Start For Free"} className='border border-black/25'/>
     </nav>
   )
 }

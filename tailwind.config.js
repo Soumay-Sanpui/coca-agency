@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'monument': ['Monument Extended', 'sans-serif'],
+        'monument': ['Monument', 'sans-serif'],
       },
       colors: {
         btncl: '#4A36DD'

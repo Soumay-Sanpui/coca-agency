@@ -12,7 +12,7 @@ const DrwOpt = ({ ttl, desc }) => {
       <div className="flex items-center justify-between cursor-pointer" onClick={toggleDropdown}>
         {/* Left section (icon and heading) */}
         <div className="flex items-center justify-between space-x-6 w-full">
-          <h2 className={`text-[1.5vw] font-semibold `}>{ttl}</h2>
+          <h2 className={`text-[1.2vw]`}>{ttl}</h2>
           {
             isOpen? <img src='/minusicn.png'/> : <img src='/plusicn.png'/>
           }
